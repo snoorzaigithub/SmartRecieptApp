@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LBt-N3-Uu2">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeViewController-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" title="HomeViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="SmartReceiptApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNs-TH-aSA">
+                                <rect key="frame" x="135" y="387" width="124" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Scan Receipt"/>
+                                <connections>
+                                    <segue destination="Gag-hR-1Kd" kind="show" id="2Ah-1i-w1T"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7o-8a-bRe">
+                                <rect key="frame" x="137" y="430" width="120" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="View History"/>
+                                <connections>
+                                    <action selector="didTapViewHistory:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyy-iv-MY4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smart Receipts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5Y-xr-QCm">
+                                <rect key="frame" x="105" y="138" width="183" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VZG-4r-EQo"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.46564885496184" y="-28.169014084507044"/>
+        </scene>
+        <!--ScanReceiptViewController-->
+        <scene sceneID="cjC-30-EsG">
+            <objects>
+                <viewController storyboardIdentifier="ScanReceiptViewController" title="ScanReceiptViewController" id="Gag-hR-1Kd" customClass="ScanReceiptViewController" customModule="SmartReceiptApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t8r-PH-F9e">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Scan Receipt" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvN-Ut-Lnn">
+                                <rect key="frame" x="117" y="115" width="159" height="29"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAf-o1-6kB">
+                                <rect key="frame" x="20" y="205" width="353" height="183"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZk-3G-a6r">
+                                <rect key="frame" x="126" y="446" width="141" height="35"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Upload Receipt"/>
+                                <connections>
+                                    <action selector="didTapUploadReceipt:" destination="Gag-hR-1Kd" eventType="touchUpInside" id="UOS-sI-KZ9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="F33-Ib-A21"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="F33-Ib-A21" firstAttribute="bottom" secondItem="oZk-3G-a6r" secondAttribute="bottom" constant="264" id="3OC-GV-7Az"/>
+                            <constraint firstItem="oZk-3G-a6r" firstAttribute="top" secondItem="cAf-o1-6kB" secondAttribute="bottom" constant="44" id="DMY-8Q-V5i"/>
+                            <constraint firstItem="cAf-o1-6kB" firstAttribute="top" secondItem="lvN-Ut-Lnn" secondAttribute="bottom" constant="45" id="HNS-k8-Xv5"/>
+                            <constraint firstItem="cAf-o1-6kB" firstAttribute="leading" secondItem="F33-Ib-A21" secondAttribute="leading" constant="20" id="Le6-cp-g1c"/>
+                            <constraint firstItem="oZk-3G-a6r" firstAttribute="leading" secondItem="F33-Ib-A21" secondAttribute="leading" constant="126" id="POX-Kn-b8Z"/>
+                            <constraint firstItem="lvN-Ut-Lnn" firstAttribute="leading" secondItem="F33-Ib-A21" secondAttribute="leading" constant="131" id="Yb5-r8-5q9"/>
+                            <constraint firstItem="lvN-Ut-Lnn" firstAttribute="top" secondItem="F33-Ib-A21" secondAttribute="top" constant="115" id="YgS-GD-VmV"/>
+                            <constraint firstItem="F33-Ib-A21" firstAttribute="trailing" secondItem="cAf-o1-6kB" secondAttribute="trailing" constant="20" id="gbt-Nn-KYD"/>
+                            <constraint firstItem="F33-Ib-A21" firstAttribute="trailing" secondItem="lvN-Ut-Lnn" secondAttribute="trailing" constant="132" id="iZ6-5g-nwY"/>
+                            <constraint firstItem="F33-Ib-A21" firstAttribute="trailing" secondItem="oZk-3G-a6r" secondAttribute="trailing" constant="126" id="mfP-zi-kBb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8vW-9A-VE0"/>
+                    <connections>
+                        <outlet property="receiptImageView" destination="cAf-o1-6kB" id="v1h-m4-AA9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uIf-fw-Hd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1611" y="-28"/>
+        </scene>
+        <!--ResultViewController-->
+        <scene sceneID="F3d-Vy-rjr">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" title="ResultViewController" id="8Uu-Tr-a2V" customClass="ResultViewController" customModule="SmartReceiptApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1hu-NH-kcl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jbk-rz-m9b">
+                                <rect key="frame" x="-4" y="90" width="401" height="464"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3eX-8B-i3S">
+                                        <rect key="frame" x="121" y="20" width="159" height="29"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7h8-dN-QYK">
+                                        <rect key="frame" x="24" y="111" width="353" height="183"/>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiH-IO-nMW">
+                                        <rect key="frame" x="20" y="324" width="361" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Vendor:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOT-UM-T1v">
+                                        <rect key="frame" x="20" y="356" width="361" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ntY-BH-6tc">
+                                        <rect key="frame" x="20" y="388" width="361" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Category:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPR-0q-lG8">
+                                        <rect key="frame" x="20" y="420" width="361" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3eX-8B-i3S" firstAttribute="leading" secondItem="HYn-fy-YNJ" secondAttribute="leading" constant="121" id="3Nf-EF-REv"/>
+                                    <constraint firstItem="YOT-UM-T1v" firstAttribute="top" secondItem="uiH-IO-nMW" secondAttribute="bottom" constant="8" symbolic="YES" id="5oD-aZ-hdo"/>
+                                    <constraint firstItem="ntY-BH-6tc" firstAttribute="top" secondItem="YOT-UM-T1v" secondAttribute="bottom" constant="8" symbolic="YES" id="6ZC-NP-MDI"/>
+                                    <constraint firstItem="uiH-IO-nMW" firstAttribute="top" secondItem="7h8-dN-QYK" secondAttribute="bottom" constant="30" id="Ady-PH-jhM"/>
+                                    <constraint firstItem="HYn-fy-YNJ" firstAttribute="trailing" secondItem="3eX-8B-i3S" secondAttribute="trailing" constant="121" id="Eec-H8-epR"/>
+                                    <constraint firstItem="7h8-dN-QYK" firstAttribute="top" secondItem="3eX-8B-i3S" secondAttribute="bottom" constant="62" id="La7-t6-TGd"/>
+                                    <constraint firstItem="IPR-0q-lG8" firstAttribute="top" secondItem="ntY-BH-6tc" secondAttribute="bottom" constant="8" symbolic="YES" id="Rtn-Yr-eHy"/>
+                                    <constraint firstItem="3eX-8B-i3S" firstAttribute="top" secondItem="HYn-fy-YNJ" secondAttribute="top" constant="20" id="YZK-08-Fgk"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="D8Q-r0-pWo"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="HYn-fy-YNJ"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UeG-I1-Uef"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="categoryLabel" destination="IPR-0q-lG8" id="fhY-Pp-jjY"/>
+                        <outlet property="dateLabel" destination="uiH-IO-nMW" id="6En-QV-vni"/>
+                        <outlet property="receiptImageView" destination="7h8-dN-QYK" id="lYv-xA-4D0"/>
+                        <outlet property="totalLabel" destination="ntY-BH-6tc" id="Z5k-Fo-sgu"/>
+                        <outlet property="vendorLabel" destination="YOT-UM-T1v" id="zit-9Q-Hq2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYm-zV-oNL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2313.740458015267" y="-28.169014084507044"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gNO-Zv-pyG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LBt-N3-Uu2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EMD-OE-0yi">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lBp-Vs-8k9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="07Z-DY-6OP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.251908396946561" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
