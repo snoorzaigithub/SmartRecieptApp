@@ -1,10 +1,7 @@
-# Team Name  
-**(Team 17)**  
-By default, your team name is Team #. Simple and functional, but not very inspiring.  
+  
 
 
----
-
+-
 ## Team Goal  
 **(To learn and understand how to work with a team given to us and a code base precreated.)**  
 **(learning a lot this semester , wroking hard and help our teameate)**
