@@ -1,13 +1,4 @@
   
-
-
--
-## Team Goal  
-**(To learn and understand how to work with a team given to us and a code base precreated.)**  
-**(learning a lot this semester , wroking hard and help our teameate)**
-
----
-
 ## Team Members  
 
 ### Mitanshu Bhoot  
