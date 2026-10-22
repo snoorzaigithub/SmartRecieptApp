@@ -38,7 +38,7 @@ An iOS Simulator or a compatible iPhone
 Setup
 
 Clone the repository:
-git clone https://github.com/YOUR_USERNAME/SmartReceiptApp.git
+git clone https://github.com/snoorzaigithub/SmartRecieptApp.git
 Open the project in Xcode.
 Select an iOS Simulator or connect your iPhone.
 Build and run the application.
